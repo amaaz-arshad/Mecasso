@@ -3,6 +3,10 @@
   padding: 0;
 } */
 
+.nav {
+  background: white;
+}
+
 .logo {
   cursor: pointer;
   font-weight: bold;
@@ -12,7 +16,7 @@
 
 .header {
   margin: auto;
-  padding: 5px 0;
+  padding: 4px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;

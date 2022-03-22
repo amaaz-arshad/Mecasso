@@ -3,14 +3,24 @@
   height: 100%;
 }
 
+.backBtn {
+  text-decoration: none;
+  color: #54b484;
+}
+
+.backBtn:hover {
+  text-decoration: underline;
+  color: #54b484;
+}
+
 .contact a {
   text-decoration: none;
-  color: #58b484;
+  color: #54b484;
 }
 
 .contact a:hover {
   text-decoration: underline;
-  color: #58b484;
+  color: #54b484;
 }
 
 .details,
@@ -20,18 +30,18 @@
 
 .backtocart {
   text-decoration: none;
-  color: #58b484;
+  color: #54b484;
 }
 
 .backtocart:hover {
   text-decoration: underline;
-  color: #58b484;
+  color: #54b484;
 }
 
 .shipbtn {
   text-decoration: none;
   color: white;
-  background: #58b484;
+  background: #54b484;
   padding: 8px 15px;
   border-radius: 5px;
 }

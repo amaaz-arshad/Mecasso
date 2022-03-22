@@ -1,0 +1,68 @@
+.rightHalf {
+  background: #f2f2f2;
+  height: 100%;
+}
+
+.backBtn {
+  text-decoration: none;
+  color: #54b484;
+}
+
+.backBtn:hover {
+  text-decoration: underline;
+  color: #54b484;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #54b484;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  color: #54b484;
+}
+
+.details,
+.rightHalf {
+  padding: 30px 40px 40px;
+}
+
+.backtocart {
+  text-decoration: none;
+  color: #54b484;
+}
+
+.backtocart:hover {
+  text-decoration: underline;
+  color: #54b484;
+}
+
+.shipbtn {
+  text-decoration: none;
+  color: white;
+  background: #54b484;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.shipbtn:hover {
+  color: white;
+  background: green;
+}
+
+.card-header {
+  background: linear-gradient(to right, #ddefe5, #bce1cd);
+  color: #56b280;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+}
+
+.card-body {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.icon-circle {
+  padding: 25px;
+}

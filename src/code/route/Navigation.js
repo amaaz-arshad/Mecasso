@@ -7,7 +7,9 @@ import Home from "../customer/screens/home/Home";
 import Header from "../customer/sharedComponents/header/Header";
 import Stores from "../customer/screens/stores/Stores";
 import Footer from "../customer/sharedComponents/footer/Footer";
-import Authentication from "../customer/screens/authentication/Authentication";
+import Shipping from "../customer/screens/shipping/Shipping";
+import Payment from "../customer/screens/payment/Payment";
+import Confirmation from "../customer/screens/confirmation/Confirmation";
 
 function Navigation(props) {
   return (
@@ -19,8 +21,11 @@ function Navigation(props) {
         <Route path="/stores" element={<Stores />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/authentication" element={<Authentication />} />
+        <Route path="/shipping" element={<Shipping />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
+      <Footer />
     </>
   );
 }

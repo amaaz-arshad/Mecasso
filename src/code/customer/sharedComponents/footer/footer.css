@@ -1,2 +1,8 @@
-* {
+.footer {
+  background-color: #272727;
+  color: white;
+}
+
+.headings {
+  color: #58b484;
 }

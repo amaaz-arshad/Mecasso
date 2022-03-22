@@ -7,7 +7,7 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 export default function Header() {
   return (
     <>
-      <div className="shadow-sm">
+      <div className="shadow-sm sticky-top nav">
         <div className="header container">
           <div>
             <h2 className="logo">MECASSO</h2>
@@ -24,7 +24,7 @@ export default function Header() {
                 <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <Link to="/authentication">Auth</Link>
+                <Link to="/shipping">Auth</Link>
               </li>
             </ul>
           </div>
