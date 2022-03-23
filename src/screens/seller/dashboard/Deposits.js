@@ -1,27 +1,54 @@
-import * as React from "react"
-import Link from "@mui/material/Link"
+import React from "react"
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart"
+import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart"
+import Grid from "@mui/material/Grid"
+import Paper from "@mui/material/Paper"
 import Typography from "@mui/material/Typography"
-import Title from "../layout/Title"
+import { paperStyle } from "../../../styles/SellerStyles"
+import Chart from "./Chart"
 
-function preventDefault(event) {
-  event.preventDefault()
-}
+const data = [
+  {
+    id: 1,
+    icon: <ShoppingCartIcon color="primary" />,
+    title: "Total Sales",
+    value: "$1,234,567",
+  },
+  {
+    id: 2,
+    icon: <AddShoppingCartIcon color="primary" />,
+    title: "Purchases",
+    value: "$1,234,567",
+  },
+  {
+    id: 3,
+    icon: <RemoveShoppingCartIcon color="primary" />,
+    title: "Returns",
+    value: "$1,234,567",
+  },
+]
 
-export default function Deposits() {
+const Deposits = () => {
   return (
-    <React.Fragment>
-      <Title>Recent Deposits</Title>
-      <Typography component="p" variant="h4">
-        $3,024.00
-      </Typography>
-      <Typography color="text.secondary" sx={{ flex: 1 }}>
-        on 15 March, 2019
-      </Typography>
-      <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
-          View balance
-        </Link>
-      </div>
-    </React.Fragment>
+    <Grid container spacing={3}>
+      {/* sale */}
+      {data.map(({ id, icon, title, value }, index) => (
+        <Grid item xs={12} md={4}>
+          <Paper sx={paperStyle}>
+            {icon}
+            <Typography color="gray">{title}</Typography>
+            <Typography variant="h6">{value}</Typography>
+          </Paper>
+        </Grid>
+      ))}
+      <Grid item xs={12}>
+        <Paper sx={paperStyle}>
+          <Chart />
+        </Paper>
+      </Grid>
+    </Grid>
   )
 }
+
+export default Deposits

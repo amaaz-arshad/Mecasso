@@ -13,7 +13,10 @@ import Badge from "@mui/material/Badge"
 import MenuIcon from "@mui/icons-material/Menu"
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
 import NotificationsIcon from "@mui/icons-material/Notifications"
-import { mainListItems } from "./listItems"
+import ListItems from "./ListItems"
+import theme, {
+  whiteBackground,
+} from "../../../styles/SellerStyles"
 
 const drawerWidth = 240
 
@@ -61,7 +64,7 @@ const Drawer = styled(MuiDrawer, {
   },
 }))
 
-const mdTheme = createTheme()
+// const mdTheme = createTheme()
 
 function SellerContent(props) {
   const [open, setOpen] = React.useState(true)
@@ -70,10 +73,10 @@ function SellerContent(props) {
   }
 
   return (
-    <ThemeProvider theme={mdTheme}>
+    // <ThemeProvider theme={theme}>
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
-        <AppBar position="absolute" open={open}>
+        <AppBar position="absolute" open={open} sx={whiteBackground} >
           <Toolbar
             sx={{
               pr: "24px", // keep right padding when drawer closed
@@ -81,7 +84,7 @@ function SellerContent(props) {
           >
             <IconButton
               edge="start"
-              color="inherit"
+              color="primary"
               aria-label="open drawer"
               onClick={toggleDrawer}
               sx={{
@@ -94,13 +97,13 @@ function SellerContent(props) {
             <Typography
               component="h1"
               variant="h6"
-              color="inherit"
+              color="primary"
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Dashboard
+              Mecasso
             </Typography>
-            <IconButton color="inherit">
+            <IconButton color="primary">
               <Badge badgeContent={4} color="secondary">
                 <NotificationsIcon />
               </Badge>
@@ -122,7 +125,7 @@ function SellerContent(props) {
           </Toolbar>
           <Divider />
           <List component="nav">
-            {mainListItems}    
+            <ListItems/>    
           </List>
         </Drawer>
         <Box
@@ -141,7 +144,7 @@ function SellerContent(props) {
           {props.children}
         </Box>
       </Box>
-    </ThemeProvider>
+    // </ThemeProvider>
   )
 }
 
