@@ -101,15 +101,6 @@ export default function Confirmation() {
                 </Grid>
               </Grid>
               <hr style={{ color: "silver" }} />
-              <div class="input-group my-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Coupon code"
-                />
-                <button class="btn btn-secondary">Add code</button>
-              </div>
-              <hr style={{ color: "silver", height: "1.5px" }} />
               <Grid container justifyContent="space-between">
                 <Grid item>
                   <p>Subtotal</p>
@@ -126,7 +117,9 @@ export default function Confirmation() {
                   <p>Calculated at next step</p>
                 </Grid>
               </Grid>
-              <hr style={{ color: "silver" }} />
+
+              <hr style={{ color: "silver", height: "1.5px" }} />
+
               <Grid container justifyContent="space-between">
                 <Grid>
                   <p>Total</p>

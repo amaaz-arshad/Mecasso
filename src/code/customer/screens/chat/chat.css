@@ -1,17 +1,19 @@
 .chat {
   width: 350px;
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
+  z-index: 2;
 }
 
 .messaging {
   width: 400px;
-  position: absolute;
+  position: fixed;
   right: 370px;
   bottom: 0;
   /* height: 400px; */
   display: none;
+  z-index: 2;
 }
 
 .chatcard {

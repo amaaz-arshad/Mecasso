@@ -7,7 +7,7 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 export default function Header() {
   return (
     <>
-      <div className="shadow-sm sticky-top nav">
+      <div className="shadow-sm fixed-top nav">
         <div className="header container">
           <div>
             <h2 className="logo">MECASSO</h2>
