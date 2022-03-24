@@ -1,6 +1,9 @@
 import React from "react"
-import { paperStyle, smallImageStyle } from "../../../styles/SellerStyles"
+import { smallImageStyle } from "../../../styles/SellerStyles"
 import Title from "../layout/Title"
+import Container from "@mui/material/Container"
+import Box from "@mui/material/Box"
+import Typography from "@mui/material/Typography"
 
 const data = [
   { id: 0, image: "", name: "Amna Ahmed", time: "1 day", price: "$100" },
@@ -14,19 +17,19 @@ const data = [
 
 const RecentSales = () => {
   return (
-    <div>
+    <Box p={2} overflow="auto" height={400}>
       <Title>Recent Sales</Title>
       {data.map(({ id, image, name, time, price }) => (
-        <div key={id}>
-          <img src="" sx={smallImageStyle} alt="" />
-          <div sx={paperStyle}>
-            {name}
-            {time}
-          </div>
-          {price}
-        </div>
+        <Box key={id} sx={{ display: "flex",justifyContent:"space-between",width: "100%" }}>
+          <img src="/u1.png" style={smallImageStyle} alt="" />
+          <Box>
+            <Typography color="">{name}</Typography>
+            <Typography color="gray">{time}</Typography>
+          </Box>
+          <Typography color="primary">{price}</Typography>
+        </Box>
       ))}
-    </div>
+    </Box>
   )
 }
 

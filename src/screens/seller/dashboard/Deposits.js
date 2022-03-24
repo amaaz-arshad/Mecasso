@@ -7,6 +7,7 @@ import Paper from "@mui/material/Paper"
 import Typography from "@mui/material/Typography"
 import { paperStyle } from "../../../styles/SellerStyles"
 import Chart from "./Chart"
+import Box from "@mui/material/Box"
 
 const data = [
   {
@@ -43,7 +44,8 @@ const Deposits = () => {
         </Grid>
       ))}
       <Grid item xs={12}>
-        <Paper sx={paperStyle}>
+        <Paper sx={{
+          height: 215, padding:"1rem"}}>
           <Chart />
         </Paper>
       </Grid>

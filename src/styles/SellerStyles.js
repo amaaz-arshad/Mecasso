@@ -9,6 +9,18 @@ const theme = createTheme({
     primary: { main: Colors.primary },
     secondary: { main: Colors.secondary },
   },
+  components: {
+    MuiPaper: {
+      styleOverrides: {
+        root: { boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        disableRipple: true
+      },
+    },
+  },
 })
 
 // icons style in side bar
@@ -23,13 +35,27 @@ export const iconStyleSelected = { color: Colors.secondary }
 export const menuBackground = {
   backgroundColor: Colors.primary,
   color: Colors.secondary,
+  textDecoration: "none"
 }
 
-export const paperStyle = { padding: "1rem", maxHeight:290,minHeight:160,display: "flex",flexDirection: "column", justifyContent: "space-between" }
+export const paperStyle = {
+  padding: "1rem",
+  maxHeight: 290,
+  minHeight: 160,
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+}
 
-export const whiteBackground = { backgroundColor: Colors.secondary }
+// header background
+export const whiteBackground = {  backgroundColor: "white" }
 
 export const smallImageStyle = {
-  width: "1rem", height: "1rem", backgroundColor: Colors.primary,borderRadius:"100%"}
+  width: "3rem",
+  height: "3rem",
+  backgroundColor: Colors.primary,
+  borderRadius: "100%",
+  margin: "0.25rem",
+}
 
 export default theme

@@ -38,9 +38,9 @@ export default function Chart() {
           data={data}
           margin={{
             top: 16,
-            right: 16,
-            bottom: 0,
-            left: 24,
+            right: 34,
+            bottom: 34,
+            left: 34,
           }}
         >
           <XAxis
