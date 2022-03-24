@@ -1,0 +1,10 @@
+.checkout {
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #58b484 !important;
+  border: none !important;
+}
+
+.checkout:hover {
+  background: green !important;
+}

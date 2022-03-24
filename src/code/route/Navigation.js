@@ -12,6 +12,7 @@ import Payment from "../customer/screens/payment/Payment";
 import Confirmation from "../customer/screens/confirmation/Confirmation";
 import FAQs from "../customer/screens/FAQs/FAQs";
 import Chat from "../customer/screens/chat/Chat";
+import Cart from "../customer/screens/cart/Cart";
 
 function Navigation(props) {
   return (
@@ -27,6 +28,7 @@ function Navigation(props) {
         <Route path="/payment" element={<Payment />} />
         <Route path="/confirmation" element={<Confirmation />} />
         <Route path="/faqs" element={<FAQs />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <Chat />
       <Footer />

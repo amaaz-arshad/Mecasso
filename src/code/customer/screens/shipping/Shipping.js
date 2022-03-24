@@ -18,6 +18,7 @@ import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 import { InputAdornment } from "@mui/material";
 import { Link } from "react-router-dom";
 import LockIcon from "@mui/icons-material/Lock";
+import Chat from "../chat/Chat";
 import "./shipping.css";
 
 const theme = createTheme();
@@ -30,6 +31,7 @@ export default function Shipping() {
 
   return (
     <ThemeProvider theme={theme}>
+      {/* <Chat /> */}
       <div className="main">
         <div className="row">
           <div className="col-md-6">

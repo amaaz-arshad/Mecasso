@@ -31,103 +31,107 @@ export default function Confirmation() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="row">
-        <div className="col-md-6">
-          <div className="container">
-            <div className="details">
-              <p>
-                <Link to="/cart" className="backBtn">
-                  Cart
-                </Link>{" "}
-                <ChevronRightOutlinedIcon sx={{ color: "silver" }} />{" "}
-                <Link to="/shipping" className="backBtn">
-                  Shipping
-                </Link>{" "}
-                <ChevronRightOutlinedIcon sx={{ color: "silver" }} />{" "}
-                <Link to="/payment" className="backBtn">
-                  Payment
-                </Link>{" "}
-                <ChevronRightOutlinedIcon sx={{ color: "silver" }} />{" "}
-                <span style={{ fontWeight: "bold" }}>Confirmation</span>
-              </p>
+      <div className="main">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="container">
+              <div className="details">
+                <p>
+                  <Link to="/cart" className="backBtn">
+                    Cart
+                  </Link>{" "}
+                  <ChevronRightOutlinedIcon sx={{ color: "silver" }} />{" "}
+                  <Link to="/shipping" className="backBtn">
+                    Shipping
+                  </Link>{" "}
+                  <ChevronRightOutlinedIcon sx={{ color: "silver" }} />{" "}
+                  <Link to="/payment" className="backBtn">
+                    Payment
+                  </Link>{" "}
+                  <ChevronRightOutlinedIcon sx={{ color: "silver" }} />{" "}
+                  <span style={{ fontWeight: "bold" }}>Confirmation</span>
+                </p>
 
-              <Grid marginTop={5} textAlign="center">
-                <Grid>
-                  <CheckCircleOutlineRoundedIcon
-                    sx={{ fontSize: 80, color: "#76ce9d" }}
-                  />
+                <Grid marginTop={5} textAlign="center">
+                  <Grid>
+                    <CheckCircleOutlineRoundedIcon
+                      sx={{ fontSize: 80, color: "#76ce9d" }}
+                    />
+                  </Grid>
+                  <Grid marginTop={2}>
+                    <h4>Payment Confirmed</h4>
+                  </Grid>
+                  <Grid marginTop={0}>
+                    <p style={{ color: "#58b484" }}>ORDER # 2039</p>
+                    <p>
+                      Thankyou for shopping from our website. Your order is
+                      confirmed and will be delivered within a week.
+                    </p>
+                  </Grid>
+                  <Grid item marginTop={5}>
+                    <Link to="/" className="shipbtn">
+                      <span>Back to shopping</span>
+                    </Link>
+                  </Grid>
+                  <Grid item marginTop={4}>
+                    <Link to="" className="backtocart">
+                      <span>Print Receipt</span>
+                    </Link>
+                  </Grid>
                 </Grid>
-                <Grid marginTop={2}>
-                  <h4>Payment Confirmed</h4>
-                </Grid>
-                <Grid marginTop={0}>
-                  <p style={{ color: "#58b484" }}>ORDER # 2039</p>
-                  <p>
-                    Thankyou for shopping from our website. Your order is
-                    confirmed and will be delivered within a week.
-                  </p>
-                </Grid>
-                <Grid item marginTop={5}>
-                  <Link to="/" className="shipbtn">
-                    <span>Back to shopping</span>
-                  </Link>
-                </Grid>
-                <Grid item marginTop={4}>
-                  <Link to="" className="backtocart">
-                    <span>Print Receipt</span>
-                  </Link>
-                </Grid>
-              </Grid>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* right section */}
-        <div className="col-md-6">
-          <div className="rightHalf">
-            <div className="container">
-              <Grid container justifyContent="space-between" marginBottom={5}>
-                <Grid item xs={5}>
-                  <img
-                    src="https://static-01.daraz.pk/p/ded03d58e4f35bf0e1bb368682e54d06.jpg"
-                    class="rounded float-left"
-                    alt="..."
-                    width="100%"
-                  />
+          {/* right section */}
+          <div className="col-md-6">
+            <div className="rightHalf">
+              <div className="container">
+                <Grid container justifyContent="space-between" marginBottom={5}>
+                  <Grid item xs={5}>
+                    <img
+                      src="https://static-01.daraz.pk/p/ded03d58e4f35bf0e1bb368682e54d06.jpg"
+                      class="rounded float-left"
+                      alt="..."
+                      width="100%"
+                    />
+                  </Grid>
+                  <Grid item>
+                    <p style={{ fontWeight: "bold" }}>Full Sleeves T-shirt</p>
+                    <p style={{ fontWeight: "bold", color: "#58b484" }}>
+                      $ 9.99
+                    </p>
+                  </Grid>
                 </Grid>
-                <Grid item>
-                  <p style={{ fontWeight: "bold" }}>Full Sleeves T-shirt</p>
-                  <p style={{ fontWeight: "bold", color: "#58b484" }}>$ 9.99</p>
+                <hr style={{ color: "silver" }} />
+                <Grid container justifyContent="space-between">
+                  <Grid item>
+                    <p>Subtotal</p>
+                  </Grid>
+                  <Grid item>
+                    <p>$ 9.99</p>
+                  </Grid>
                 </Grid>
-              </Grid>
-              <hr style={{ color: "silver" }} />
-              <Grid container justifyContent="space-between">
-                <Grid item>
-                  <p>Subtotal</p>
+                <Grid container justifyContent="space-between">
+                  <Grid>
+                    <p>Shipping</p>
+                  </Grid>
+                  <Grid item>
+                    <p>Calculated at next step</p>
+                  </Grid>
                 </Grid>
-                <Grid item>
-                  <p>$ 9.99</p>
-                </Grid>
-              </Grid>
-              <Grid container justifyContent="space-between">
-                <Grid>
-                  <p>Shipping</p>
-                </Grid>
-                <Grid item>
-                  <p>Calculated at next step</p>
-                </Grid>
-              </Grid>
 
-              <hr style={{ color: "silver", height: "1.5px" }} />
+                <hr style={{ color: "silver", height: "1.5px" }} />
 
-              <Grid container justifyContent="space-between">
-                <Grid>
-                  <p>Total</p>
+                <Grid container justifyContent="space-between">
+                  <Grid>
+                    <p>Total</p>
+                  </Grid>
+                  <Grid item>
+                    <h4>$ 9.99</h4>
+                  </Grid>
                 </Grid>
-                <Grid item>
-                  <h4>$ 9.99</h4>
-                </Grid>
-              </Grid>
+              </div>
             </div>
           </div>
         </div>
