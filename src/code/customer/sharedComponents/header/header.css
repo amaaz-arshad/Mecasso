@@ -54,6 +54,10 @@
   width: 100%;
 }
 
+.header ul li:active::after {
+  width: 100%;
+}
+
 .navicons {
   color: black;
 }

@@ -10,6 +10,8 @@ import Footer from "../customer/sharedComponents/footer/Footer";
 import Shipping from "../customer/screens/shipping/Shipping";
 import Payment from "../customer/screens/payment/Payment";
 import Confirmation from "../customer/screens/confirmation/Confirmation";
+import FAQs from "../customer/screens/FAQs/FAQs";
+import Chat from "../customer/screens/chat/Chat";
 
 function Navigation(props) {
   return (
@@ -24,7 +26,9 @@ function Navigation(props) {
         <Route path="/shipping" element={<Shipping />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/confirmation" element={<Confirmation />} />
+        <Route path="/faqs" element={<FAQs />} />
       </Routes>
+      <Chat />
       <Footer />
     </>
   );

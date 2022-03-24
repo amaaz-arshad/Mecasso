@@ -36,6 +36,7 @@ export default function Login() {
             marginTop: 8,
             alignItems: "center",
             padding: 3,
+            marginBottom: 8,
           }}
         >
           <Box

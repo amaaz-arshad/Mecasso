@@ -26,16 +26,17 @@ export default function Header() {
               <li>
                 <Link to="/shipping">Auth</Link>
               </li>
+              <li>
+                <Link to="/faqs">FAQs</Link>
+              </li>
             </ul>
           </div>
           <div>
-            <Link to="/login" className="navicons">
-              <PersonOutlineOutlinedIcon
-                sx={{ fontSize: "30px", marginRight: 1 }}
-              />
-            </Link>
             <Link to="/cart" className="navicons">
-              <ShoppingCartOutlinedIcon />
+              <ShoppingCartOutlinedIcon sx={{ marginRight: 1 }} />
+            </Link>
+            <Link to="/login" className="navicons">
+              <PersonOutlineOutlinedIcon sx={{ fontSize: "30px" }} />
             </Link>
           </div>
         </div>

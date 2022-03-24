@@ -1,0 +1,106 @@
+.chat {
+  width: 350px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.messaging {
+  width: 400px;
+  position: absolute;
+  right: 370px;
+  bottom: 0;
+  /* height: 400px; */
+  display: none;
+}
+
+.chatcard {
+  background: white;
+  border-radius: 10px;
+}
+
+.cardHeader {
+  border-bottom: 1px solid silver;
+  padding: 10px 15px;
+}
+
+.cardBody {
+  padding: 20px 15px;
+}
+
+.msg {
+  font-size: 12px;
+  color: rgb(179, 179, 179);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.name {
+  font-size: 14px;
+}
+
+.msgBlock:hover {
+  cursor: pointer;
+}
+
+.msgCard {
+  background: white;
+  border-radius: 20px;
+}
+
+.sellerMsg {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.customerMsg {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #cbf3d7;
+  text-align: right;
+}
+
+.customer {
+  text-align: right;
+  padding: 2px 0;
+}
+
+.seller {
+  padding: 2px 0;
+}
+
+.msgCardBody {
+  padding: 0 10px;
+  background-color: #f8f2f2;
+}
+
+.messages-section {
+  /* overflow-y: scroll; */
+}
+
+.msgInput {
+  width: 100%;
+  margin: 5px 0;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.msgInput::first-letters {
+  border: none;
+}
+
+.msg-group-input {
+  align-items: center;
+  display: flex;
+}
+
+.search-btn {
+  position: absolute;
+  right: 12px;
+}

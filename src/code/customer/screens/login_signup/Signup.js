@@ -34,6 +34,7 @@ export default function Signup() {
         <Card
           sx={{
             marginTop: 8,
+            marginBottom: 8,
             alignItems: "center",
             padding: 3,
           }}

@@ -63,7 +63,7 @@ export default function Confirmation() {
                 <Grid marginTop={0}>
                   <p style={{ color: "#58b484" }}>ORDER # 2039</p>
                   <p>
-                    Thnakyou for shopping from our website. Your order is
+                    Thankyou for shopping from our website. Your order is
                     confirmed and will be delivered within a week.
                   </p>
                 </Grid>
