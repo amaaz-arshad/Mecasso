@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography"
 import Link from "@mui/material/Link"
 import Deposits from "./Deposits"
 import Orders from "./Orders"
-import SellerLayout from "../layout/SellerLayout"
 import RecentSales from "./RecentSales"
 
 function Copyright(props) {
@@ -29,7 +28,6 @@ function Copyright(props) {
 
 const Dashboard = () => {
   return (
-    <SellerLayout>
       <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
         <Grid container spacing={2}>
           {/* grid 1 */}
@@ -52,7 +50,6 @@ const Dashboard = () => {
         </Grid>
         <Copyright sx={{ pt: 4 }} />
       </Container>
-    </SellerLayout>
   )
 }
 
