@@ -9,6 +9,8 @@ import {
   ResponsiveContainer,
 } from "recharts"
 import Title from "../layout/Title"
+import Paper from "@mui/material/Paper"
+
 
 // Generate Sales Data
 function createData(time, amount) {
@@ -27,12 +29,17 @@ const data = [
   createData("24:00", undefined),
 ]
 
-export default function Chart() {
+const Chart=({title})=> {
   const theme = useTheme()
 
   return (
-    <React.Fragment>
-      <Title>Today</Title>
+    <Paper
+      sx={{
+        height: 215,
+        padding: "1rem",
+      }}
+    >
+      <Title>{title}</Title>
       <ResponsiveContainer>
         <LineChart
           data={data}
@@ -73,6 +80,8 @@ export default function Chart() {
           />
         </LineChart>
       </ResponsiveContainer>
-    </React.Fragment>
+    </Paper>
   )
 }
+
+export default Chart

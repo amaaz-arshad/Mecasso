@@ -1,7 +1,7 @@
 import React from "react"
 import { smallImageStyle } from "../../../styles/SellerStyles"
 import Title from "../layout/Title"
-import Container from "@mui/material/Container"
+import Paper from "@mui/material/Paper"
 import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"
 
@@ -17,19 +17,28 @@ const data = [
 
 const RecentSales = () => {
   return (
-    <Box p={2} overflow="auto" height={400}>
-      <Title>Recent Sales</Title>
-      {data.map(({ id, image, name, time, price }) => (
-        <Box key={id} sx={{ display: "flex",justifyContent:"space-between",width: "100%" }}>
-          <img src="/u1.png" style={smallImageStyle} alt="" />
-          <Box>
-            <Typography color="">{name}</Typography>
-            <Typography color="gray">{time}</Typography>
+    <Paper>
+      <Box p={2} overflow="auto" height={400}>
+        <Title>Recent Sales</Title>
+        {data.map(({ id, image, name, time, price }) => (
+          <Box
+            key={id}
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              width: "100%",
+            }}
+          >
+            <img src="/u1.png" style={smallImageStyle} alt="" />
+            <Box>
+              <Typography color="">{name}</Typography>
+              <Typography color="gray">{time}</Typography>
+            </Box>
+            <Typography color="primary">{price}</Typography>
           </Box>
-          <Typography color="primary">{price}</Typography>
-        </Box>
-      ))}
-    </Box>
+        ))}
+      </Box>
+    </Paper>
   )
 }
 

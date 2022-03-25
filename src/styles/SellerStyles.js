@@ -12,12 +12,14 @@ const theme = createTheme({
   components: {
     MuiPaper: {
       styleOverrides: {
-        root: { boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" },
+        root: {
+          boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+        },
       },
     },
     MuiButton: {
       styleOverrides: {
-        disableRipple: true
+        disableRipple: true,
       },
     },
   },
@@ -35,7 +37,7 @@ export const iconStyleSelected = { color: Colors.secondary }
 export const menuBackground = {
   backgroundColor: Colors.primary,
   color: Colors.secondary,
-  textDecoration: "none"
+  textDecoration: "none",
 }
 
 export const paperStyle = {
@@ -48,7 +50,7 @@ export const paperStyle = {
 }
 
 // header background
-export const whiteBackground = {  backgroundColor: "white" }
+export const whiteBackground = { backgroundColor: "white" }
 
 export const smallImageStyle = {
   width: "3rem",
