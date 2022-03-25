@@ -6,6 +6,7 @@ import TableBody from "@mui/material/TableBody"
 import TableCell from "@mui/material/TableCell"
 import TableHead from "@mui/material/TableHead"
 import TableRow from "@mui/material/TableRow"
+import Box from "@mui/material/Box"
 import Title from "../layout/Title"
 import { Link } from "react-router-dom"
 import { Typography } from "@mui/material"
@@ -144,8 +145,10 @@ const rows = [
 const Customers = () => {
   return (
     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-      <Paper sx={{ padding: "1rem" }}>
+      <Box sx={{ mb: 2 }}>
         <Title>Customers</Title>
+      </Box>
+      <Paper sx={{ padding: "1rem" }}>
         <Table size="small">
           <TableHead>
             <TableRow>

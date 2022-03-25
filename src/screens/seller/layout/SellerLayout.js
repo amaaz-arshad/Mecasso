@@ -71,7 +71,6 @@ function SellerContent(props) {
   }
 
   return (
-    // <ThemeProvider theme={theme}>
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar position="absolute" open={open} sx={whiteBackground}>
@@ -142,7 +141,6 @@ function SellerContent(props) {
         {props.children}
       </Box>
     </Box>
-    // </ThemeProvider>
   )
 }
 

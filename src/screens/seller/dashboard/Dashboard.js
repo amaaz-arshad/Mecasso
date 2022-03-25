@@ -2,10 +2,12 @@ import React from "react"
 import Container from "@mui/material/Container"
 import Grid from "@mui/material/Grid"
 import Typography from "@mui/material/Typography"
+import Box from "@mui/material/Box"
 import Link from "@mui/material/Link"
 import Deposits from "./Deposits"
 import Orders from "./Orders"
 import RecentSales from "./RecentSales"
+import Title from "../layout/Title"
 
 function Copyright(props) {
   return (
@@ -28,6 +30,10 @@ function Copyright(props) {
 const Dashboard = () => {
   return (
     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
+        <Box sx={{mb:2}}>
+          <Title>Dashboard</Title>
+        </Box>
+
       <Grid container spacing={2}>
         {/* grid 1 */}
         <Grid item xs={12} md={8}>

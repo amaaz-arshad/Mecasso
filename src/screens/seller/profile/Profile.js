@@ -1,11 +1,14 @@
 import React from "react"
 import Container from "@mui/material/Container"
-import Paper from "@mui/material/Paper"
+import Box from "@mui/material/Box"
+import Title from "../layout/Title"
 
 const Profile = () => {
   return (
     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-    
+      <Box sx={{ mb: 2 }}>
+        <Title>Profile</Title>
+      </Box>
     </Container>
   )
 }
