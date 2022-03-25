@@ -3,7 +3,6 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart"
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart"
 import Grid from "@mui/material/Grid"
-import Paper from "@mui/material/Paper"
 import Chart from "./Chart"
 import SalesCount from "../sharedComponent/SalesCount"
 
