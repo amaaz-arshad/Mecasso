@@ -1,9 +1,9 @@
 import React from "react"
-import { smallImageStyle } from "../../../styles/SellerStyles"
-import Title from "../layout/Title"
 import Paper from "@mui/material/Paper"
 import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography"
+import { smallImageStyle } from "../../../styles/SellerStyles"
+import Title from "../sharedComponent/Title"
 
 const data = [
   { id: 0, image: "", name: "Amna Ahmed", time: "1 day", price: "$100" },

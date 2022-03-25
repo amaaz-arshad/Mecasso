@@ -2,8 +2,8 @@ import React from 'react'
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart"
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart"
-import SalesCount from '../sharedComponent/SalesCount'
 import Grid from "@mui/material/Grid"
+import SalesCount from '../sharedComponent/SalesCount'
 
 
 

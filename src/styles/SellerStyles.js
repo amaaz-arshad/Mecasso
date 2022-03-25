@@ -22,6 +22,37 @@ const theme = createTheme({
         disableRipple: true,
       },
     },
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          scrollbarColor: `${Colors.primary} ${Colors.secondary}`,
+          "&::-webkit-scrollbar, & *::-webkit-scrollbar": {
+            backgroundColor: Colors.secondary,
+          },
+          "&::-webkit-scrollbar-thumb, & *::-webkit-scrollbar-thumb": {
+            borderRadius: 8,
+            backgroundColor: Colors.primary,
+            minHeight: 24,
+            border: `3px solid ${Colors.secondary}`,
+          },
+          "&::-webkit-scrollbar-thumb:focus, & *::-webkit-scrollbar-thumb:focus":
+            {
+              backgroundColor: Colors.primary,
+            },
+          "&::-webkit-scrollbar-thumb:active, & *::-webkit-scrollbar-thumb:active":
+            {
+              backgroundColor: Colors.primary,
+            },
+          "&::-webkit-scrollbar-thumb:hover, & *::-webkit-scrollbar-thumb:hover":
+            {
+              backgroundColor: Colors.primary,
+            },
+          "&::-webkit-scrollbar-corner, & *::-webkit-scrollbar-corner": {
+            backgroundColor: Colors.secondary,
+          },
+        },
+      },
+    },
   },
 })
 

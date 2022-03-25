@@ -4,10 +4,10 @@ import Grid from "@mui/material/Grid"
 import Typography from "@mui/material/Typography"
 import Box from "@mui/material/Box"
 import Link from "@mui/material/Link"
-import Deposits from "./Deposits"
-import Orders from "./Orders"
-import RecentSales from "./RecentSales"
-import Title from "../layout/Title"
+import Deposits from "../components/dashboard/Deposits"
+import Orders from "../components/dashboard/Orders"
+import RecentSales from "../components/dashboard/RecentSales"
+import Title from "../components/sharedComponent/Title"
 
 function Copyright(props) {
   return (

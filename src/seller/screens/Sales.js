@@ -2,10 +2,10 @@ import React from "react"
 import Container from "@mui/material/Container"
 import Box from "@mui/material/Box"
 import Grid from "@mui/material/Grid"
-import Chart from "../dashboard/Chart"
-import SalesSummary from "./SalesSummary"
-import SalesProducts from "./SalesProducts"
-import Title from "../layout/Title"
+import Chart from "../components/dashboard/Chart"
+import SalesSummary from "../components/sales/SalesSummary"
+import SalesProducts from "../components/sales/SalesProducts"
+import Title from "../components/sharedComponent/Title"
 
 const Sales = () => {
   return (

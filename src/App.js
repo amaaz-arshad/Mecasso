@@ -1,15 +1,17 @@
-import Dashboard from "./screens/seller/dashboard/Dashboard"
 import theme from "./styles/SellerStyles"
 import "./App.css"
 import { ThemeProvider } from "@mui/material/styles"
 import { Route, Routes } from "react-router-dom"
-import Profile from "./screens/seller/profile/Profile"
-import Sales from "./screens/seller/sales/Sales"
-import Stores from "./screens/seller/store/Stores"
-import Store from "./screens/seller/store/Store"
-import Customers from "./screens/seller/customers/Customers"
-import Chat from "./screens/seller/chat/Chat"
-import SellerLayout from "./screens/seller/layout/SellerLayout"
+import SellerLayout from "./layout/SellerLayout"
+import Dashboard from "./seller/screens/Dashboard"
+import Profile from "./seller/screens/Profile"
+import Sales from "./seller/screens/Sales"
+import Customers from "./seller/screens/Customers"
+import Chat from "./seller/screens/Chat"
+import Store from "./seller/screens/store/Store"
+import Stores from "./seller/screens/store/Stores"
+
+
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React from "react"
 import Paper from "@mui/material/Paper"
-import Title from "../layout/Title"
+import Title from "../sharedComponent/Title"
 import Table from "@mui/material/Table"
 import TableBody from "@mui/material/TableBody"
 import TableCell from "@mui/material/TableCell"

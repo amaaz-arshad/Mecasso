@@ -8,8 +8,8 @@ import {
   Label,
   ResponsiveContainer,
 } from "recharts"
-import Title from "../layout/Title"
 import Paper from "@mui/material/Paper"
+import Title from "../sharedComponent/Title"
 
 
 // Generate Sales Data

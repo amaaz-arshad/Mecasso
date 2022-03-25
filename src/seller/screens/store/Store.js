@@ -5,8 +5,8 @@ import Grid from "@mui/material/Grid"
 import Paper from "@mui/material/Paper"
 import Typography from "@mui/material/Typography"
 import Button from "@mui/material/Button"
-import Title from "../layout/Title"
-import { Link, useParams } from "react-router-dom"
+import {  useParams } from "react-router-dom"
+import Title from "../../components/sharedComponent/Title"
 
 const Store = () => {
   const { name } = useParams()

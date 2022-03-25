@@ -7,10 +7,10 @@ import TableCell from "@mui/material/TableCell"
 import TableHead from "@mui/material/TableHead"
 import TableRow from "@mui/material/TableRow"
 import Box from "@mui/material/Box"
-import Title from "../layout/Title"
 import { Link } from "react-router-dom"
 import { Typography } from "@mui/material"
-import { smallImageStyle } from "../../../styles/SellerStyles"
+import { smallImageStyle } from "../../styles/SellerStyles"
+import Title from "../components/sharedComponent/Title"
 
 function createData(id, name, phone, email, location, url) {
   return { id, name, phone, email, location, url }

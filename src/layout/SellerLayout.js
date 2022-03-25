@@ -14,7 +14,7 @@ import MenuIcon from "@mui/icons-material/Menu"
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
 import NotificationsIcon from "@mui/icons-material/Notifications"
 import ListItems from "./ListItems"
-import { whiteBackground } from "../../../styles/SellerStyles"
+import { whiteBackground } from "../styles/SellerStyles"
 
 const drawerWidth = 240
 

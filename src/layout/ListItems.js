@@ -12,7 +12,7 @@ import theme, {
   iconStyle,
   iconStyleSelected,
   menuBackground,
-} from "../../../styles/SellerStyles"
+} from "../styles/SellerStyles"
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 

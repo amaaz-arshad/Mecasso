@@ -1,7 +1,7 @@
 import React from "react"
 import Container from "@mui/material/Container"
 import Box from "@mui/material/Box"
-import Title from "../layout/Title"
+import Title from "../components/sharedComponent/Title"
 
 const Chat = () => {
   return (
