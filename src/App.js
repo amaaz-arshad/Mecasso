@@ -1,5 +1,6 @@
 import Dashboard from "./screens/seller/dashboard/Dashboard"
 import theme from "./styles/SellerStyles"
+import "./App.css"
 import { ThemeProvider } from "@mui/material/styles"
 import { Route, Routes } from "react-router-dom"
 import Profile from "./screens/seller/profile/Profile"
