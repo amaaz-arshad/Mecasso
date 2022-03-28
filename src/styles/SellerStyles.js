@@ -1,13 +1,21 @@
 import { createTheme } from "@mui/material/styles"
 
 // colors
-const Colors = { primary: "#5BC08A", secondary: "#fff" }
+const Colors = {
+  primary: "#5BC08A",
+  lightPrimary: "#EEFFF3",
+  secondary: "#fff",
+  lightGrey: "#E1E1E1",
+  grey: "#A1A1A1",
+  extraLightGrey: "#F2F2F2",
+}
 
 // palette
 const theme = createTheme({
   palette: {
-    primary: { main: Colors.primary },
+    primary: { main: Colors.primary,light:Colors.lightPrimary },
     secondary: { main: Colors.secondary },
+    grey: { main: Colors.grey, light: Colors.lightGrey , extraLight: Colors.extraLightGrey},
   },
   components: {
     MuiPaper: {
@@ -89,6 +97,27 @@ export const smallImageStyle = {
   backgroundColor: Colors.primary,
   borderRadius: "100%",
   margin: "0.25rem",
+}
+
+// customer chat message: 
+export const chatCustomerMessageStyle = {
+  backgroundColor: "grey.extraLight",
+  borderRadius: "0.5rem",
+  marginY: "1rem",
+  padding: "1rem",
+  width: "max-content",
+  maxWidth: "70%"
+}
+
+export const chatSellerMessageStyle = {
+  backgroundColor: "primary.light",
+  borderRadius: "0.5rem",
+  marginY: "1rem",
+  marginLeft: "auto",
+  marginRight: "0",
+  padding: "1rem",
+  width: "max-content",
+  maxWidth: "70%"
 }
 
 export default theme
