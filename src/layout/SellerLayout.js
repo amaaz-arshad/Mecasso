@@ -65,7 +65,7 @@ const Drawer = styled(MuiDrawer, {
 // const mdTheme = createTheme()
 
 function SellerContent(props) {
-  const [open, setOpen] = React.useState(true)
+  const [open, setOpen] = React.useState(false)
   const toggleDrawer = () => {
     setOpen(!open)
   }

@@ -5,8 +5,9 @@ import Grid from "@mui/material/Grid"
 import Paper from "@mui/material/Paper"
 import Typography from "@mui/material/Typography"
 import Button from "@mui/material/Button"
-import {  useParams } from "react-router-dom"
+import {  Link, useParams } from "react-router-dom"
 import Title from "../../components/sharedComponent/Title"
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos"
 
 const Store = () => {
   const { name } = useParams()
@@ -20,8 +21,14 @@ const Store = () => {
   ]
   return (
     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-      <Box sx={{ mb: 2 ,display:"flex",justifyContent: "space-between"}}>
-        <Title>{name} &#62; Products</Title>
+      <Link to="/stores">
+        <Button variant="outline" color="primary" sx={{marginBottom: 3}}>
+          <ArrowBackIosIcon color="primary" /> 
+          <Typography color="primary">Back</Typography>
+        </Button>
+      </Link>
+      <Box sx={{ mb: 2, display: "flex", justifyContent: "space-between" }}>
+        <Title>{name} - Products</Title>
         <Button variant="contained" color="primary">
           <Typography color="secondary">Add Product</Typography>
         </Button>
