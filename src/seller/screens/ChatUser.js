@@ -49,7 +49,7 @@ const ChatUser = () => {
         <img src="/u1.png" alt="" style={{ margin: "0.75rem" }} />
         <Typography variant="h6">{name}</Typography>
       </Paper>
-      <Box height={700} overflow="auto" p={3}>
+      <Box height={600} overflow="auto" p={3}>
         {chatMessage.map(({ id, name, message }) => (
           <>
             {name === "u" ? (

@@ -7,9 +7,10 @@ import Paper from "@mui/material/Paper"
 import TextField from "@mui/material/TextField"
 import Title from "../components/sharedComponent/Title"
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos"
-import { Link, Outlet } from "react-router-dom"
+import { Link, Outlet, useParams } from "react-router-dom"
 
 const Chat = () => {
+  const { name } = useParams()
   const chat = [
     {
       id: 1,
@@ -68,10 +69,20 @@ const Chat = () => {
   ]
   return (
     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-      <Title>Chat</Title>
-      <Paper sx={{ padding: "1rem", height: 900 }}>
+      {/* <Title>{name}</Title> */}
+      <Paper sx={{ padding: "1rem", height: 800 }}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={4}>
+          <Grid
+            item
+            xs={12}
+            sx={
+              name
+                ? { display: { xs: "none", sm: "block" } }
+                : { display: "block" }
+            }
+            sm={5}
+            // md={4}
+          >
             <Title>All Messages</Title>
 
             <Paper sx={{ padding: "1rem" }}>
@@ -86,13 +97,13 @@ const Chat = () => {
                 xs={12}
                 spacing={2}
                 marginY={1}
-                height={720}
+                height={620}
                 overflow="auto"
               >
                 {chat.map(({ id, name, image, message }) => (
                   <Grid item xs={12} key={id}>
                     <Link to={`${name}`}>
-                    {/* <Link to={`${id}`}> */}
+                      {/* <Link to={`${id}`}> */}
                       <Box
                         display="flex"
                         justifyContent="space-between"
@@ -117,7 +128,16 @@ const Chat = () => {
               </Grid>
             </Paper>
           </Grid>
-          <Grid item xs={12} md={8}>
+          <Grid
+            item
+            xs={12}
+            sx={`${
+              name
+                ? { display: "block" }
+                : { display: { xs: "none", md: "block" } }
+            }`}
+            sm={7}
+          >
             <Outlet />
           </Grid>
         </Grid>
