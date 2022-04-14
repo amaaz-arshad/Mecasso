@@ -1,0 +1,42 @@
+.rightHalf {
+  background: #f2f2f2;
+  height: 100%;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #58b484;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  color: #58b484;
+}
+
+.details,
+.rightHalf {
+  padding: 30px 40px 40px;
+}
+
+.backtocart {
+  text-decoration: none;
+  color: #58b484;
+}
+
+.backtocart:hover {
+  text-decoration: underline;
+  color: #58b484;
+}
+
+.shipbtn {
+  text-decoration: none;
+  color: white;
+  background: #58b484;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.shipbtn:hover {
+  color: white;
+  background: green;
+}
