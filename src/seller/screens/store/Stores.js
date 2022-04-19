@@ -28,9 +28,11 @@ const Stores = () => {
           <Typography color="gray" marginX={4}>
             Total Followers - 450
           </Typography>
-          <Button variant="contained">
-            <Typography color="secondary">Add Store</Typography>
-          </Button>
+          <Link to="/addStore">
+            <Button variant="contained">
+              <Typography color="secondary">Add Store</Typography>
+            </Button>
+          </Link>
         </Box>
       </Box>
       <Grid container spacing={2}>
@@ -54,7 +56,6 @@ const Stores = () => {
           </Grid>
         ))}
       </Grid>
-      
     </Container>
   )
 }

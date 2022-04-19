@@ -11,6 +11,9 @@ import Chat from "./seller/screens/Chat"
 import Store from "./seller/screens/store/Store"
 import Stores from "./seller/screens/store/Stores"
 import ChatUser from "./seller/screens/ChatUser"
+import AddStore from "./seller/screens/AddStore"
+import AddProduct from "./seller/screens/AddProduct"
+import EditProduct from "./seller/screens/EditProduct"
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
           <Route path="profile" element={<Profile />} />
           <Route path="sales" element={<Sales />} />
           <Route path="stores" element={<Stores />} />
+          <Route path="addStore" element={<AddStore />} />
+          <Route path="addProduct" element={<AddProduct />}/>
+          <Route path="editProduct" element={<EditProduct />}/>
           <Route path="stores/:name" element={<Store />} />
           <Route path="customers" element={<Customers />} />
           <Route path="chat" element={<Chat />}>

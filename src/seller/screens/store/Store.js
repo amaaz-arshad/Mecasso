@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid"
 import Paper from "@mui/material/Paper"
 import Typography from "@mui/material/Typography"
 import Button from "@mui/material/Button"
-import {  Link, useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import Title from "../../components/sharedComponent/Title"
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos"
 
@@ -22,38 +22,42 @@ const Store = () => {
   return (
     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
       <Link to="/stores">
-        <Button variant="outline" color="primary" sx={{marginBottom: 3}}>
-          <ArrowBackIosIcon color="primary" /> 
+        <Button variant="outline" color="primary" sx={{ marginBottom: 3 }}>
+          <ArrowBackIosIcon color="primary" />
           <Typography color="primary">Back</Typography>
         </Button>
       </Link>
       <Box sx={{ mb: 2, display: "flex", justifyContent: "space-between" }}>
         <Title>{name} - Products</Title>
-        <Button variant="contained" color="primary">
-          <Typography color="secondary">Add Product</Typography>
-        </Button>
+        <Link to="/addProduct">
+          <Button variant="contained" color="primary">
+            <Typography color="secondary">Add Product</Typography>
+          </Button>
+        </Link>
       </Box>
       <Grid container spacing={2}>
         {products.map(({ id, name, price, quantity }) => (
           <Grid item xs={12} md={4} lg={3} key={id}>
-            {/* <Link to={`/stores/${name}`}> */}
-            <Paper sx={{ padding: "1rem" }}>
-              <img
-                src="/product.png"
-                width="100%"
-                height="100%"
-                sx={{ resizeMode: "contain", width: "" }}
-                alt=""
-              />
-              <Typography>{name}</Typography>
-              <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-                <Typography color="gray">Quantity - {quantity}</Typography>
-                <Typography align="right" color="primary">
-                  ${price}
-                </Typography>
-              </Box>
-            </Paper>
-            {/* </Link> */}
+            <Link to="/editProduct">
+              {/* <Link to={`/stores/${name}`}> */}
+              <Paper sx={{ padding: "1rem" }}>
+                <img
+                  src="/product.png"
+                  width="100%"
+                  height="100%"
+                  sx={{ resizeMode: "contain", width: "" }}
+                  alt=""
+                />
+                <Typography>{name}</Typography>
+                <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                  <Typography color="gray">Quantity - {quantity}</Typography>
+                  <Typography align="right" color="primary">
+                    ${price}
+                  </Typography>
+                </Box>
+              </Paper>
+              {/* </Link> */}
+            </Link>
           </Grid>
         ))}
       </Grid>
