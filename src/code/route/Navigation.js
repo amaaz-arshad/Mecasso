@@ -13,6 +13,7 @@ import Confirmation from "../customer/screens/confirmation/Confirmation";
 import FAQs from "../customer/screens/FAQs/FAQs";
 import Chat from "../customer/screens/chat/Chat";
 import Cart from "../customer/screens/cart/Cart";
+import ProductDetail from "../customer/screens/product/ProductDetail";
 
 function Navigation(props) {
   return (
@@ -29,6 +30,7 @@ function Navigation(props) {
         <Route path="/confirmation" element={<Confirmation />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/productDetail" element={<ProductDetail />} />
       </Routes>
       <Chat />
       <Footer />

@@ -21,6 +21,9 @@ export default function Header() {
                 <Link to="/stores">Stores</Link>
               </li>
               <li>
+                <Link to="/productdetail">productdetail</Link>
+              </li>
+              <li>
                 <Link to="/contact">Contact</Link>
               </li>
               <li>
