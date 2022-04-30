@@ -5,6 +5,8 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import img from "../../../../images/product.png";
+import { Link } from "react-router-dom";
+import "./product.css";
 
 export default function Product() {
   return (
@@ -15,38 +17,40 @@ export default function Product() {
         margin: "8px",
       }}
     >
-      <CardActionArea style={{ dispaly: "flex", flexDirection: "column" }}>
-        <CardMedia
-          component="img"
-          height="140"
-          image={img}
-          alt="product img"
-          style={{ backgroundColor: "#f8f9fa", backgroundPosition: "center" }}
-        />
+      <Link to="/productdetail">
+        <CardActionArea style={{ dispaly: "flex", flexDirection: "column" }}>
+          <CardMedia
+            component="img"
+            height="140"
+            image={img}
+            alt="product img"
+            style={{ backgroundColor: "#f8f9fa", backgroundPosition: "center" }}
+          />
 
-        <CardContent style={{ width: "100%" }}>
-          <Typography
-            gutterBottom
-            style={{
-              textAlign: "center",
-              backgroundColor: "white",
-              fontFamily: "Poppins",
-            }}
-          >
-            Spice Mint
-          </Typography>
-          <Typography
-            gutterBottom
-            style={{
-              textAlign: "right",
-              color: "red",
-              fontFamily: "Roboto",
-            }}
-          >
-            $9.99
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+          <CardContent style={{ width: "100%" }}>
+            <Typography
+              gutterBottom
+              style={{
+                textAlign: "center",
+                backgroundColor: "white",
+                fontFamily: "Poppins",
+              }}
+            >
+              Spice Mint
+            </Typography>
+            <Typography
+              gutterBottom
+              style={{
+                textAlign: "right",
+                color: "red",
+                fontFamily: "Roboto",
+              }}
+            >
+              $9.99
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Link>
     </Card>
   );
 }
